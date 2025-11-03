@@ -8,7 +8,7 @@ void setup() {
   tone(8, 523, 100);
   delay(100);
 }
-void serilEvent() { // 要收 USB Serial 資料
+void serialEvent() { // 要收 USB Serial 資料
   while (Serial.available()){
     char now = Serial.read();
     if (now=='R') {
